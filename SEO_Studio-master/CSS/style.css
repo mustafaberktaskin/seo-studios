@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+*{
+    padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+.line{
+    width: 10%; 
+    text-align: center; 
+    margin-left: 45%;
+    background-image: linear-gradient(to right,#11998e 0%, #38ef7d 100%);
+    height: 4px;
+    border: none;
+    margin-top: 2%;
+}
+
+.mobileNav{
+  display: none;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    margin: 1.5%;
+    overflow: hidden;
+}
+
+header .icon{
+  display: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+
+nav a{
+    color: black;
+    text-decoration: none;
+    padding: 2.5%;
+    font-size: 18px;
+    font-weight: 900;
+    transition:.3s;
+
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: #38ef7d;
+    text-decoration-thickness: 3.5px;
+    text-underline-offset: 15px;
+}
+
+body .background .bg{
+    width: 100%;
+    position: relative;
+}
+
+body .background .details{
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  text-align: center;
+  color:white;
+}
+
+body .background .details .line{
+    width: 20%; 
+    text-align: center; 
+    margin-left: 40%;
+    background-image: linear-gradient(to right,#11998e 0%, #38ef7d 100%);
+    height: 4px;
+    border: none;
+}
+
+
+body .background .details .improve{
+    font-size:405%;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+}
+
+body .background .details .webimage{
+    font-size: 205%;
+    letter-spacing: 1px;
+}
+
+body .background .details h4{
+  font-size:16px;
+  margin-bottom: 5%; 
+  line-height:150%; 
+  text-align:center; 
+  letter-spacing:3px;
+}
+body .background .details a{
+    text-decoration: none;
+    padding: 3%;
+    color:white;
+    border: solid 1px;
+    border-radius: 250px;
+    margin: 5%;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    transition:1s;
+}
+
+body .background .details a:hover{
+    background-color: #0796C6;
+    border: none;
+}
+
+body .background .details .consult{
+    background-image: linear-gradient(to right,#11998e 0%, #38ef7d 100%);
+    border: none;
+    transition:1s; 
+}
+body .background .details .consult:hover{
+    background-color: #0796C6;
+    background-image: linear-gradient(to right,#0796C6 0%, #0796C6 100%);
+}
+body .background .details .learn{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+body .welcome{
+    display: grid;
+    grid-template-columns: 50% 50%;   
+}
+
+body .welcome .left{
+    margin: 10%;
+    margin-left: 25%;
+    text-align:left;
+}
+
+body .welcome .left .line{
+    width: 20%; 
+    text-align: center; 
+    margin-left: 19%;
+    margin-top: 4%;
+    margin-bottom:4%;
+    background-image: linear-gradient(to right,#11998e 0%, #38ef7d 100%);
+    height: 4px;
+    border: none;
+}
+
+body .welcome .left a{
+    text-decoration: none;
+    padding: 3%;
+    color:black;
+    border: solid 1px;
+    border-radius: 250px;
+    margin: 5%;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    transition:.4s;
+}
+
+body .welcome .left a:hover{
+    background-color: #0796C6;
+    border: none;
+    color: white;
+}
+
+body .welcome .right{
+    margin-top: 9%;
+}
+
+body .services{
+    margin: 0;
+    padding: 0;
+    background-color: #f2f3f9;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    padding: 5%;
+    grid-template-rows: 50% 50%;
+
+}
+
+body .services div{
+    width: 112.5%;
+    padding: 10%;
+    text-align: justify;
+}
+
+body .services div h2{
+    font-size: 126%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body .services div h2 i{
+    color:#38ef7d;
+    font-size: 150%;
+
+}
+
+@media (max-width: 500px){
+
+  *{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  header div .icon{
+    display: block;
+    font-size: 30px;
+    color: black;
+  }
+  header div{
+    display:grid;
+    grid-template-columns:30% 70%;
+  }
+
+  .topNav{
+    display: none;
+  }
+
+  .mobileNav{
+    margin: 30%;
+    margin-top: 15%;
+    color: black;
+    text-align: center;
+    background-color: #c9dff0;
+    border-radius: 10px;
+    transition:display 1s;
+  }
+
+  .mobileNav a{
+    text-decoration: none;
+    display: block;
+    padding: 5%;
+  }
+
+  body .background .details{
+    position: absolute;
+    top: 9%;
+    left:20%;
+    text-align: center;
+    color:white;
+    margin-right:20%;
+  }
+  
+  body .background .details .improve{
+    font-size:150%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body .background .details .webimage{
+    font-size: 75%;
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin-bottom: -40px;
+}
+
+body .background .details h4{
+  font-size: 40%;
+  letter-spacing: 1px;
+  margin-left: 5%;
+  margin-bottom: 0;
+}
+
+.background .details .line{
+  display: none;
+}
+
+body .background .details a{
+    text-decoration: none;
+    padding: 3%;
+    color:white;
+    border: solid 1px;
+    border-radius: 250px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    transition:1s;
+    height: 5%;
+    width: 8%;
+    font-size: 5%;
+    text-align: center;
+}
+body .background .details .consult{
+  padding: 3% 5%;
+  margin-bottom: 50px;
+}
+
+body .welcome{
+  display: block;
+  margin-right: 25%;
+}
+
+body .welcome .left h1{
+  text-align: center;
+  font-size: 150%;
+}
+
+body .welcome .left p{
+  font-size: 70%;
+  text-align: justify;
+}
+
+body .welcome .line{
+  display: none;
+}
+
+body .welcome .right img{
+  width: 80%;
+  margin-left: 15%;
+}
+
+body .services{
+  display: block;
+  text-align: center;
+}
+
+body .services div p{
+  font-size:65%;
+  font-weight: 900;
+  margin-right: 28%;
+  margin-left: 0;
+  text-align: justify;
+}
+
+}
+
+/* Team starts here */
+
+
+.gtco-testimonials {
+    position: relative;
+    margin-top: 30px;
+  }
+  .gtco-testimonials h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 50px;
+  }
+  .gtco-testimonials .owl-stage-outer {
+    padding: 30px 0;
+  }
+  .gtco-testimonials .owl-nav {
+    display: none;
+  }
+  .gtco-testimonials .owl-dots {
+    text-align: center;
+  }
+  .gtco-testimonials .owl-dots span {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: block;
+    background: #fff;
+    border: 2px solid #01b0f8;
+    margin: 0 5px;
+  }
+  .gtco-testimonials .owl-dots .active {
+    box-shadow: none;
+  }
+  .gtco-testimonials .owl-dots .active span {
+    background: #01b0f8;
+    box-shadow: none;
+    height: 12px;
+    width: 12px;
+    margin-bottom: -1px;
+  }
+  .gtco-testimonials .card {
+    background: #fff;
+    box-shadow: 0 8px 30px -7px #c9dff0;
+    margin: 0 20px;
+    padding: 0 10px;
+    border-radius: 20px;
+    border: 0;
+  }
+  .gtco-testimonials .card .card-img-top {
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 15px auto 0;
+    box-shadow: 0 8px 20px -4px #95abbb;
+    width: 100px;
+    height: 100px;
+  }
+  .gtco-testimonials .card h5 {
+    color: #01b0f8;
+    font-size: 21px;
+    line-height: 1.3;
+  }
+  .gtco-testimonials .card h5 span {
+    font-size: 18px;
+    color: #666666;
+  }
+  .gtco-testimonials .card p {
+    font-size: 18px;
+    color: #555;
+    padding-bottom: 15px;
+  }
+  .gtco-testimonials .active {
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
+  .gtco-testimonials .center {
+    opacity: 1;
+  }
+  .gtco-testimonials .center h5 {
+    font-size: 24px;
+  }
+  .gtco-testimonials .center h5 span {
+    font-size: 20px;
+  }
+  .gtco-testimonials .center .card-img-top {
+    max-width: 100%;
+    height: 120px;
+    width: 120px;
+  }
+  
+  @media (max-width: 500px) {
+    .gtco-testimonials {
+      margin-top: 20px;
+    }
+  }
+  .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+    outline: 0;
+  }
+  .owl-carousel button.owl-dot {
+    outline: 0;
+  }
+  
+
+/* Our Projects Starts here */
+
+.project-section{
+    margin: 4rem 0;
+    background-color: #e1f5fe75;
+
+}
+
+.project-container{
+    padding: 20px;
+}
+
+.project-title{
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.project-title h3{
+    color: #000;
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 52px;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.project-title p{
+    padding: 0;
+    color: #000;
+    line-height: 28px;
+    margin-bottom: 0;
+    font-weight: 400
+}
+
+.project-box{
+  position: relative;
+  margin: 0;
+}
+
+.project-box-item{
+  display: none;
+  margin-left: 3%;
+  position: relative;
+}
+
+.project-box-item img{
+  width: 30%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  padding: 10px 10px 0;
+  margin-left: 2%;
+}
+
+.project-box-item img:hover{
+  -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        border-radius: 15px;
+}
+.text{
+  position: absolute;
+  background-color: #e1f5fe;
+  top: 98%;
+  width: 29%;
+  height: 30%;
+  border-radius: 5px;
+  padding: 0 15px;
+  text-align: center;
+}
+.text1{
+left: 2.7%;
+}
+.text2{
+  left: 34.8%;
+}
+.text3{
+  left: 67.2%;
+}
+.text h4{
+  font-weight: bold;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 10rem 0 4rem;
+  transition: background-color 0.6s ease;
+}
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.project-btn{
+    text-align: center;
+    background-image: linear-gradient(to right,#11998e 0%, #38ef7d 100%);
+    border: none;
+    transition:1s; 
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    border: none;
+    padding: 1%;
+    border-radius: 50px;
+}
+.project-btn:hover{
+    background-color: #0796C6;
+    background-image: linear-gradient(to right,#0796C6 0%, #0796C6 100%);
+}
+body .background .details .consult:hover{
+    background-color: #0796C6;
+    background-image: linear-gradient(to right,#0796C6 0%, #0796C6 100%);
+}
+
+
+
+@media (max-width: 500px){
+
+.project-title{
+  margin-bottom: 40px;
+}
+.project-title h3{
+  font-size: 30px;
+  line-height: 36px
+}
+.project-box-item img{
+  width: 100%;
+  padding: 25px 0 0;
+}
+.text{
+  position: relative;
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 10px 0 ;
+}
+.text h4{
+  margin-top: 0;
+}
+.dot{
+  margin: 2rem 0 4rem;
+}
+}
+
+/* Testimonials starts here */
+.testimonial-section{
+  text-align: center;
+  background-color: #fff;
+  padding: 2rem 0;
+}
+.testimonial-title h3{
+    color: #000;
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 52px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    padding: 0;
+}
+
+.testimonial-box-item{
+  display: inline-block;
+  width: 23%;
+  background-color: #e1f5fe75;
+  margin: 1.5rem;
+  padding: 1rem;
+  box-shadow: #aaaaaa 10px 10px 5px;
+}
+
+.left-quote{
+  float: left;
+}
+.thumbnail-img{
+  margin: 0;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.name h4{
+  margin: 5px;
+}
+.name p{
+  margin: 5px;
+}
+.testimonial{
+  padding: 5px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+@media (max-width: 767px){
+  .testimonial-box-item{
+    display: block;
+    width: 79%;
+  }
+}
+
+/* Contact us page */
+
+
+input[type=text],input[type=email], select, textarea {
+    width: 100%;
+    padding: 3%;
+    border: 1px solid #ccc;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    resize: vertical;
+    border-radius: 50px;
+    border: none;
+  }
+  
+  input[type=button] {
+    background-image: linear-gradient(to right,#0796C6 0%, #0796C6 100%);
+    color: white;
+    padding: 2%;
+    width: 25%;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type=button]:hover{
+    background-color: #0796C6;
+    background-image: linear-gradient(to right,#0796C6 0%, #0796C6 100%);
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 5%;
+    margin: 5%;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 2%;
+    padding: 3%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 500px) {
+    .column, input[type=button] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
